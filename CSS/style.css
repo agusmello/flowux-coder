@@ -166,6 +166,17 @@ background-color: #9ACBD0;
 transform: scale(1.04);
 }
 
+/* footer*/
+
+footer{
+font-family: "Space Grotesk", sans-serif;
+text-align: center;
+}
+
+footer a{
+text-decoration: none;
+}
+
 /*mobile*/
 
 @media (max-width: 768px) {
@@ -205,15 +216,3 @@ left: 15px;
 grid-template-columns: 1fr;
 }
 }
-
-/* footer*/
-
-footer{
-font-family: "Space Grotesk", sans-serif;
-text-align: center;
-}
-
-footer a{
-text-decoration: none;
-}
-
