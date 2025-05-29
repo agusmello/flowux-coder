@@ -1,0 +1,38 @@
+@use 'variables';
+@use 'mixins';
+@use 'extend';
+
+#servicios {
+padding: 2rem;
+max-width: 1500px;
+margin: auto;
+
+h1 {
+@extend %titulo-base;
+font-size: variables.$font-size-titulo;
+padding: 1.2rem;
+}
+
+h2 {
+@extend %titulo-base;
+font-size: variables.$font-size-subtitulo;
+}
+
+.container-grid {
+@include mixins.grid-responsive(250px);
+}
+
+.item-grid {
+background-color: variables.$color-secundario;
+padding: 15px;
+border-radius: 8px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+text-align: center;
+}
+
+p.servicios {
+@extend %parrafo-base;
+font-weight: 300;
+color: variables.$color-font;
+}
+}

@@ -1,0 +1,118 @@
+@use 'variables';
+@use 'extend';
+@use 'mixins';
+
+body {
+font-family:variables.$font;
+background-color: variables.$color-fondo;
+}
+
+nav {
+text-align: center;
+list-style: none;
+width: 100%;
+padding: 1rem 0;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+font-family: variables.$font;
+}
+
+h1 {
+@extend %titulo-base;
+font-size: variables.$font-size-titulo;
+padding: 1.2rem;
+}
+
+h2 {
+@extend %titulo-base;
+font-size: variables.$font-size-subtitulo;
+}
+
+h2.tagline {
+font-style: italic;
+}
+
+h3 {
+@extend %titulo-base;
+line-height: 2;
+}
+
+p {
+@extend %parrafo-base;
+color: variables.$color-font;
+font-size: variables.$font-size-parrafo;
+}
+
+section {
+padding: 2rem;
+max-width: 1500px;
+margin: auto;
+}
+
+img {
+height: auto;
+width: 99px;
+}
+
+
+
+// Elementos Multimedia
+
+.logos {
+@extend %flex-center;
+gap: 2rem;
+flex-wrap: wrap;
+margin: 2rem;
+}
+
+.logos img {
+width: 60px;
+height: auto;
+}
+
+.logos-alt {
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+
+.action {
+font-family: variables.$font;
+text-align: center;
+margin: 2rem 1rem;
+}
+
+.whatsapp {
+position: fixed;
+bottom: 20px;
+left: 20px;
+}
+
+// Grid
+.container-grid {
+@include mixins.grid-responsive(250px);
+}
+
+.item-grid {
+background-color: variables.$color-secundario;
+padding: 15px;
+border-radius: 8px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+text-align: center;
+}
+
+.fila-home {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 2rem;
+margin: 2rem auto;
+
+.item-grid {
+width: 210px;
+}
+}
+

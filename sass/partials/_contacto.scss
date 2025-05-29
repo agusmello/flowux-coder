@@ -1,0 +1,67 @@
+@use 'variables';
+@use 'extend';
+@use 'mixins';
+
+main section {
+padding: 2rem;
+max-width: 800px;
+margin: auto;
+text-align: center;
+
+h1 {
+@extend %titulo-base;
+font-size: variables.$font-size-titulo;
+margin-bottom: 2rem;
+}
+
+form {
+display: flex;
+flex-direction: column;
+gap: 1rem;
+margin-bottom: 2rem;
+
+label {
+font-weight: bold;
+text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+padding: 0.5rem;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-family: variables.$font;
+}
+
+input[type="submit"] {
+background-color: variables.$color-secundario;
+color: white;
+border: none;
+padding: 0.7rem;
+border-radius: 5px;
+cursor: pointer;
+font-weight: bold;
+font-family: variables.$font;
+transition: background-color 0.3s ease;
+
+&:hover {
+background-color: #7baeb5;
+}
+}
+}
+
+iframe {
+width: 100%;
+max-width: 600px;
+height: 400px;
+border: 0;
+margin: 2rem auto;
+}
+
+p {
+@extend %parrafo-base;
+font-style: italic;
+margin-top: 1rem;
+}
+}

@@ -1,0 +1,25 @@
+@use "variables";
+@use "extend";
+
+// header
+
+header {
+background-color: #48A6A7;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+padding: 1rem;
+}
+
+//footer
+
+footer{
+@extend %flex-center;
+flex-direction: column;
+padding: 1rem;
+font-family: variables.$font;
+}
+
+footer a{
+text-decoration: none;
+}

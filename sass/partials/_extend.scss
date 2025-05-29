@@ -1,0 +1,24 @@
+@use "variables";
+
+//centrar elementos
+
+%flex-center {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+//titulos (para h1, h2 h3)
+
+%titulo-base {
+text-align: center;
+letter-spacing: 1px;
+font-family: variables.$font;
+}
+
+%parrafo-base {
+font-family: variables.$font;
+line-height: 2;
+letter-spacing: 1px;
+margin-left: 2%;
+}

@@ -1,0 +1,46 @@
+@use 'variables';
+@use 'mixins';
+@use 'extend';
+
+main section {
+padding: 2rem;
+max-width: 1500px;
+margin: auto;
+
+h1 {
+@extend %titulo-base;
+font-size: variables.$font-size-titulo;
+padding-bottom: 1rem;
+}
+
+p {
+@extend %parrafo-base;
+color: variables.$color-font;
+max-width: 800px;
+margin: 0 auto 1rem;
+text-align: center;
+}
+
+.container-grid {
+@include mixins.grid-responsive(250px);
+margin-top: 2rem;
+}
+
+.item-grid {
+background-color: variables.$color-secundario;
+padding: 15px;
+border-radius: 8px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+text-align: center;
+
+h2 {
+@extend %titulo-base;
+font-size: variables.$font-size-subtitulo;
+}
+
+p {
+@extend %parrafo-base;
+color: variables.$color-font;
+}
+}
+}

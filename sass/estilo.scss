@@ -1,0 +1,15 @@
+// base
+@use "partials/variables";
+@use "partials/extend";
+@use "partials/mixins";
+
+//componentes
+@use "partials/index";
+@use "partials/header-footer";
+@use "partials/portfolio";
+@use "partials/servicios";
+@use "partials/sobremi";
+@use "partials/contacto";
+
+//media queries
+@use "partials/mediaq";

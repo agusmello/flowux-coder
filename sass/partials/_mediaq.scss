@@ -1,0 +1,39 @@
+// mobile
+
+@media (max-width: 768px) {
+h1 {
+font-size: 1.5rem;
+}
+
+h2 {
+font-size: 1.2rem;
+}
+
+.logos {
+flex-direction: column;
+align-items: center;
+gap: 1rem;
+}
+
+.logos img {
+width: 50px;
+}
+
+.action {
+margin: 2rem 1rem;
+}
+
+section {
+padding: 1.5rem 1rem;
+}
+
+.whatsapp {
+bottom: 15px;
+left: 15px;
+}
+
+.container-grid,
+.portfolio-grid {
+grid-template-columns: 1fr;
+}
+}

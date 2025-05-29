@@ -1,0 +1,340 @@
+footer, .logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main section h1, main section .item-grid h2, #servicios h1, #servicios h2, #mockups h1, h1, h2, h3 {
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+main section p, main section .item-grid p, #servicios p.servicios, #mockups p, #mockups .portfolio-item p, p {
+  font-family: "Space Grotesk", sans-serif;
+  line-height: 2;
+  letter-spacing: 1px;
+  margin-left: 2%;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  background-color: #F3F4F6;
+}
+
+nav {
+  text-align: center;
+  list-style: none;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+h1 {
+  font-size: xx-large;
+  padding: 1.2rem;
+}
+
+h2 {
+  font-size: larger;
+}
+
+h2.tagline {
+  font-style: italic;
+}
+
+h3 {
+  line-height: 2;
+}
+
+p {
+  color: #000000;
+  font-size: 1rem;
+}
+
+section {
+  padding: 2rem;
+  max-width: 1500px;
+  margin: auto;
+}
+
+img {
+  height: auto;
+  width: 99px;
+}
+
+.logos {
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
+
+.logos img {
+  width: 60px;
+  height: auto;
+}
+
+.logos-alt {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.action {
+  font-family: "Space Grotesk", sans-serif;
+  text-align: center;
+  margin: 2rem 1rem;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.item-grid {
+  background-color: #9ACBD0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.fila-home {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2rem auto;
+}
+.fila-home .item-grid {
+  width: 210px;
+}
+
+header {
+  background-color: #48A6A7;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+
+footer {
+  flex-direction: column;
+  padding: 1rem;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+#mockups {
+  padding: 2rem;
+  max-width: 1500px;
+  margin: auto;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+#mockups h1 {
+  font-size: xx-large;
+  padding-bottom: 1rem;
+}
+#mockups p {
+  color: #000000;
+  max-width: 700px;
+  margin: 0 auto 1rem;
+}
+#mockups .portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin-top: 2rem;
+}
+#mockups .portfolio-item {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+#mockups .portfolio-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+#mockups .portfolio-item p {
+  font-weight: 400;
+  margin: 0;
+}
+#mockups .portfolio-item:hover {
+  background-color: #9ACBD0;
+  transform: scale(1.04);
+}
+
+#servicios {
+  padding: 2rem;
+  max-width: 1500px;
+  margin: auto;
+}
+#servicios h1 {
+  font-size: xx-large;
+  padding: 1.2rem;
+}
+#servicios h2 {
+  font-size: larger;
+}
+#servicios .container-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+#servicios .item-grid {
+  background-color: #9ACBD0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+#servicios p.servicios {
+  font-weight: 300;
+  color: #000000;
+}
+
+main section {
+  padding: 2rem;
+  max-width: 1500px;
+  margin: auto;
+}
+main section h1 {
+  font-size: xx-large;
+  padding-bottom: 1rem;
+}
+main section p {
+  color: #000000;
+  max-width: 800px;
+  margin: 0 auto 1rem;
+  text-align: center;
+}
+main section .container-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin-top: 2rem;
+}
+main section .item-grid {
+  background-color: #9ACBD0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+main section .item-grid h2 {
+  font-size: larger;
+}
+main section .item-grid p {
+  color: #000000;
+}
+
+main section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+main section h1 {
+  font-size: xx-large;
+  margin-bottom: 2rem;
+}
+main section form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+main section form label {
+  font-weight: bold;
+  text-align: left;
+}
+main section form input[type=text],
+main section form input[type=email],
+main section form input[type=number] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: "Space Grotesk", sans-serif;
+}
+main section form input[type=submit] {
+  background-color: #9ACBD0;
+  color: white;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Space Grotesk", sans-serif;
+  transition: background-color 0.3s ease;
+}
+main section form input[type=submit]:hover {
+  background-color: #7baeb5;
+}
+main section iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  border: 0;
+  margin: 2rem auto;
+}
+main section p {
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  .logos {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .logos img {
+    width: 50px;
+  }
+  .action {
+    margin: 2rem 1rem;
+  }
+  section {
+    padding: 1.5rem 1rem;
+  }
+  .whatsapp {
+    bottom: 15px;
+    left: 15px;
+  }
+  .container-grid,
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */

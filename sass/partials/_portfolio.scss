@@ -1,0 +1,55 @@
+@use 'variables';
+@use 'mixins';
+@use 'extend';
+
+#mockups {
+padding: 2rem;
+max-width: 1500px;
+margin: auto;
+background-color: #f7f7f7;
+text-align: center;
+
+h1 {
+@extend %titulo-base;
+font-size: variables.$font-size-titulo;
+padding-bottom: 1rem;
+}
+
+p {
+@extend %parrafo-base;
+color: variables.$color-font;
+max-width: 700px;
+margin: 0 auto 1rem;
+}
+
+.portfolio-grid {
+@include mixins.grid-responsive(280px);
+margin-top: 2rem;
+}
+
+.portfolio-item {
+background-color: white;
+border-radius: 10px;
+padding: 15px;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease;
+
+img {
+width: 100%;
+height: auto;
+border-radius: 8px;
+margin-bottom: 10px;
+}
+
+p {
+@extend %parrafo-base;
+font-weight: 400;
+margin: 0;
+}
+
+&:hover {
+background-color: variables.$color-secundario;
+transform: scale(1.04);
+}
+}
+}
