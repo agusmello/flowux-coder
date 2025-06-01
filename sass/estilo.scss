@@ -13,3 +13,7 @@
 
 //media queries
 @use "partials/mediaq";
+
+//responsive-no horizontal scroll
+body {
+overflow-x: hidden;
