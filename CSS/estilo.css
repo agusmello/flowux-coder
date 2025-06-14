@@ -96,6 +96,10 @@ img {
   bottom: 20px;
   left: 20px;
 }
+.whatsapp img {
+  width: 3.8rem;
+  height: auto;
+}
 
 .container-grid {
   display: grid;
@@ -183,7 +187,7 @@ footer a {
 }
 #mockups .portfolio-item:hover {
   background-color: #9ACBD0;
-  transform: scale(1.04);
+  transform: scale(1.09);
 }
 
 #servicios {
@@ -335,6 +339,9 @@ main section p {
   .portfolio-grid {
     grid-template-columns: 1fr;
   }
+}
+body {
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=estilo.css.map */
